@@ -67,8 +67,7 @@ def register():
         cur.close()
 
         flash('You are now register and can login', 'success')
-
-        return render_template(url_for('login'))
+        return redirect(url_for('login'))
     return render_template('register.html', form=form)
 
 #User Login
