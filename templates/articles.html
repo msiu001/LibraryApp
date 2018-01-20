@@ -3,7 +3,8 @@
 {% block body %}
 <ul class="list-group">
     <div class="container">
-        <h1>Articles:</h1>
+        <h1 style="text-align: left; width:49%; display: inline-block;">Articles:</h1>
+        <p style="text-align: right; width:50%;  display: inline-block;">RIGHT</p>
         {% for article in articles %}  
             <li class="list-group-item"><a href="article/{{article.id}}/">{{article.title }}</a> </li>
         {% endfor %}
